@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wireframe Challnge</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src="js/index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <div class="body-border">
+        <form id="searchAcityForm">
+            <input type="text" placeholder="Enter a city..." id="searchbar" />
+            <input class="btn btn-primary" type="submit" value="Submit" id="submit">
+        </form>
+
+        <h1 id="city">
+            London
+        </h1>
+        <h2><span id="temperature">11</span>
+
+            <span class="units">
+                <a href="#" id="cel">°C</a>|
+                <a href="#" id="far">°F</a>
+            </span>
+        </h2>
+        <h3>Current Date</h3>
+
+        <p>
+        <div class="container1">
+            <div class="row row-cols-auto">
+
+                <ul>
+                    <li>
+                        Humidity
+                        <div class="col" id="humidity">64%</div>
+                    </li>
+                    <li>Wind speed
+                        <div class="col" id="windspeed">40%</div>
+
+                    </li>
+                    <li>Visibility
+                        <div class="col" id="visibility">16.1 km</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        </p>
+        <div class="container2">
+            <div class="row row-cols-5" id="dates">
+                <div class="col">Today</div>
+                <div class="col">Tomorow</div>
+                <div class="col">Sunday</div>
+                <div class="col">Monday</div>
+                <div class="col">Tuesday</div>
+            </div>
+
+            <div class="row row-cols-5" id="deg">
+                <div class="col">11°C</div>
+                <div class="col">15°C</div>
+                <div class="col">10°C</div>
+                <div class="col">11°C</div>
+                <div class="col">12°C</div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
