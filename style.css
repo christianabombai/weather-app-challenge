@@ -1,19 +1,23 @@
 h1 {
   color: pink;
-  font-family: "Akaya Telivigala", cursive;
+font-family: 'Tangerine', cursive;
   text-align: left;
-  font-size: 60px;
+  font-size: 100px;
   padding-left: 20px;
   position: relative;
+  max-width: 305px;
+
 }
 h2 {
   color: pink;
-  font-family: "Akaya Telivigala", cursive;
+  font-family: 'Tangerine', cursive;
   text-align: left;
-  font-size: 80px;
+  font-size: 120px;
   padding-left: 20px;
   position: relative;
-  bottom: 27px;
+  bottom: 67px;
+
+  
 }
 #searchbar {
   font-family: "Roboto Condensed", sans-serif;
@@ -27,8 +31,8 @@ ul li {
   display: block;
   text-align: center;
   position: relative;
-  left: 400px;
-  bottom: 230px;
+  left: 300px;
+  bottom: 330px;
   width: 100%;
   margin: 20px;
   color: rgb(247, 241, 241);
@@ -39,43 +43,22 @@ ul li {
   border-radius: 5px;
   box-shadow: 6px 6px 4px #ede9eb;
   margin: 400px;
-  max-width: 626px;
-  max-height: 600px;
-  background-image: url("image/download.jpg");
+  max-width: 726px;
+  max-height: 400px;
+  background-image: url(image/weatherapp3.jpg);
+  
 }
 
-.container2 {
-  font-family: "Roboto Condensed", sans-serif;
-  display: block;
-  font-size: 17px;
-  padding: 30px;
-  margin: 20px;
-  bottom: 200px;
-  position: relative;
-  color: #a8a0a4;
-}
-#deg {
-  text-align: center;
-  padding-top: 30px;
-  color: #a8a0a4;
-}
-#dates {
-  text-align: center;
-  color: #a8a0a4;
-}
 
-#emojis {
-  text-align: center;
-  padding-top: 20px;
-}
-h3 {
+
+
+h3{
   text-align: left;
   padding-left: 20px;
-  padding-bottom: 20px;
   font-size: 20px;
   font-family: "Roboto Condensed", sans-serif;
   color: rgb(247, 241, 241);
-}
+  }
 .btn-primary {
   background-color: pink;
   max-width: 100px;
@@ -88,16 +71,25 @@ h3 {
   background-color: rgb(223, 196, 201);
 }
 .units {
-  font-size: 25px;
+  font-size: 20px;
   position: relative;
   bottom: 20px;
 }
 
-#celciuslink {
+#cel {
+  text-decoration: none;
+  color: rgb(247, 241, 241);
+  margin:5px;
+}
+#far {
   text-decoration: none;
   color: rgb(247, 241, 241);
 }
-#fareheitlink {
-  text-decoration: none;
-  color: rgb(247, 241, 241);
+
+
+#description{
+   color: rgb(247, 241, 241);
+   position:relative;
+   margin-left:20px;
+   text-transform:capitalize;
 }

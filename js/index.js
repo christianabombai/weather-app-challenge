@@ -12,7 +12,12 @@ function formatDate(date) {
   ];
   let currentDay = days[date.getDay()];
   let currentHours = date.getHours();
+  
   let currentMinutes = date.getMinutes();
+    if (currentMinutes < 10) {
+    currentMinutes = `0${currentMinutes}`;
+  }
+    
 
   return ` ${currentDay}, ${currentHours} : ${currentMinutes}`;
 }
@@ -20,14 +25,15 @@ let h3 = document.querySelector("h3");
 h3.innerHTML = formatDate(currentTime);
 
 function displayData(response) {
-  console.log(response);
+  console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     `${response.data.main.temp}`
   );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#visibility").innerHTML = response.data.visibility;
+  document.querySelector("#visibility").innerHTML = Math.round(response.data.main.feels_like);
   document.querySelector("#windspeed").innerHTML = response.data.wind.speed;
+  document.querySelector("#description").innerHTML= response.data.weather[0].description;
 }
 
 function search(city) {
