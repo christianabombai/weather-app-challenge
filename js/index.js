@@ -25,7 +25,6 @@ let h3 = document.querySelector("h3");
 h3.innerHTML = formatDate(currentTime);
 
 function displayData(response) {
-  console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
   celciusTemp = response.data.main.temp;
   document.querySelector("#temperature").innerHTML = Math.round(celciusTemp);
