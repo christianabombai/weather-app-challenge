@@ -27,9 +27,8 @@ h3.innerHTML = formatDate(currentTime);
 function displayData(response) {
   console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    `${response.data.main.temp}`
-  );
+  celciusTemp = response.data.main.temp;
+  document.querySelector("#temperature").innerHTML = Math.round(celciusTemp);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#visibility").innerHTML = Math.round(response.data.main.feels_like);
   document.querySelector("#windspeed").innerHTML = response.data.wind.speed;
@@ -61,9 +60,10 @@ searchCityInput.addEventListener("submit", displayCity);
 function convertDeg(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  let temperature = temperatureElement.innerHTML;
-  temperatureElement.innerHTML = Math.round((temperature * 9) / 5 + 32);
+  let fareheitTemp= Math.round((celciusTemp * 9) / 5 + 32);
+  temperatureElement.innerHTML = Math.round(fareheitTemp);
 }
+
 
 let fareheitLink = document.querySelector("#far");
 fareheitLink.addEventListener("click", convertDeg);
@@ -71,8 +71,7 @@ fareheitLink.addEventListener("click", convertDeg);
 function convertToCelcius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  let temperature = temperatureElement.innerHTML;
-  temperatureElement.innerHTML = Math.round(((temperature - 32) * 5) / 9);
+  temperatureElement.innerHTML = Math.round(celciusTemp);
 }
 
 let celciusLink = document.querySelector("#cel");
