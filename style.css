@@ -31,7 +31,7 @@ ul li {
   display: block;
   text-align: center;
   position: relative;
-  left: 300px;
+  left: 440px;
   bottom: 330px;
   width: 100%;
   margin: 20px;
@@ -42,9 +42,9 @@ ul li {
   border-style: none;
   border-radius: 5px;
   box-shadow: 6px 6px 4px #ede9eb;
-  margin: 400px;
-  max-width: 726px;
-  max-height: 400px;
+  margin: 40px;
+  max-width: 700px;
+  max-height: 500px;
   background-image: url(image/weatherapp3.jpg);
   
 }
@@ -92,4 +92,20 @@ h3{
    position:relative;
    margin-left:20px;
    text-transform:capitalize;
+}
+
+.weather-forecast {
+  margin-top: -70px;
+  text-align: center;
+  color:#000;
+
+}
+
+.weather-forecast-temperature{
+  margin:10px;
+color:#fff;
+font-size:13px;
+}
+img{
+  margin:10px 10px 0px 10px;
 }
