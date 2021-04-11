@@ -24,6 +24,10 @@ function formatDate(date) {
 let h3 = document.querySelector("h3");
 h3.innerHTML = formatDate(currentTime);
 
+function displayForecast(){
+  let forecastElement=document.querySelector("#forecast");
+  forecastElement.innerHTML="Forecast";
+}
 function displayData(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   celciusTemp = response.data.main.temp;
@@ -75,3 +79,5 @@ function convertToCelcius(event) {
 
 let celciusLink = document.querySelector("#cel");
 celciusLink.addEventListener("click", convertToCelcius);
+
+displayForecast();
